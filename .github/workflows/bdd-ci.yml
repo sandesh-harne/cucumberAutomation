@@ -3,7 +3,7 @@ name: Run BDD Tests
 on:
   push:
     branches:
-      - main
+      - sandesh
   pull_request:
 
 jobs:
