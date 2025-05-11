@@ -6,13 +6,20 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class LoginStepDefination {
+	ChromeOptions options;
+	public LoginStepDefination() {
+		options = new ChromeOptions();
+        options.addArguments("--headless");
+	}	
 	WebDriver driver;
+	
 
 	@Given("user opens the {string} url")
 	public void user_opens_the_url(String url) {
