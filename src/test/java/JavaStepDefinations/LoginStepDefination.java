@@ -16,7 +16,7 @@ public class LoginStepDefination {
 	ChromeOptions options;
 	public LoginStepDefination() {
 		options = new ChromeOptions();
-        options.addArguments("--headless");
+        options.addArguments("--start-maximized");
 	}	
 	WebDriver driver;
 	
