@@ -12,6 +12,9 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class LoginStepDefination {
+	ChromeOptions options = new ChromeOptions();
+options.setHeadless(false); // 🚫 No headless
+options.addArguments("--start-maximized");
 	WebDriver driver;
 
 	@Given("user opens the {string} url")
